@@ -1,0 +1,30 @@
+
+samtools view -q 20 -c R02-SC-IN-01.bam			
+samtools flagstat R02-SC-IN-01.bam -O tsv
+
+
+Aboreas QC-passed reads	Aboreas QC-failed reads		
+8226458	0	total	
+22895	0	secondary	
+0	0	supplementary	
+0	0	duplicates	
+8226458	0	mapped	
+100.00%	N/A	mapped %	
+8203563	0	paired in sequencing	
+4099804	0	read1	
+4103759	0	read2	
+7676364	0	properly paired	
+93.57%	N/A	properly paired %	
+8188258	0	with itself and mate mapped	
+15305	0	singletons	
+0.19%	N/A	singletons %	
+418750	0	with mate mapped to a diferent chr	
+418750	0	with mat mapped to a different chr (mapQ>=5)	
+7647567		number reads with quality over 30	
+8226458		number reads with quality over 20	
+92.96305895		% mapped reads over 30	
+100		% mapped reads over 20	
+		number reads with quality over 10	
+		% mapped reads over 10	
+4607672		number of anaxy aligned - bbufo aligned	
+56.01039962		aligning with anaxry retains 56% more reads than using bufo bufo	

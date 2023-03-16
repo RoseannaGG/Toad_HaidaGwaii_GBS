@@ -1,0 +1,11 @@
+Job ID: 58659722
+Cluster: cedar
+User/Group: roseanna/roseanna
+State: OUT_OF_MEMORY (exit code 0)
+Nodes: 1
+Cores per node: 24
+CPU Utilized: 6-14:08:54
+CPU Efficiency: 67.63% of 9-17:51:36 core-walltime
+Job Wall-clock time: 09:44:39
+Memory Utilized: 48.76 GB
+Memory Efficiency: 99.85% of 48.83 GB

@@ -1,0 +1,46 @@
+[roseanna@cedar1 gstacks_minmapq20_1370]$ cat gstacks.log
+gstacks v2.62, executed 2023-02-20 22:06:24 (zlib-1.2.11)
+gstacks -I /scratch/roseanna//ANBO_refassembly_HGthesis_lane1_lane2_lane3/alignments_mapq20/ -M /scratch/roseanna//info/Pop_map_HGthesis_lane1_allexcptexperimnt_lane2_LM_VanIs_lane3_NW_siteID.tsv -O /scratch/roseanna//ANBO_refassembly_HGthesis_lane1_lane2_lane3/gstacks_minmapq20_1370/ --min-mapq 20 -t 24
+Locus/sample distributions will be written to '/scratch/roseanna//ANBO_refassembly_HGthesis_lane1_lane2_lane3/gstacks_minmapq20_1370/gstacks.log.distribs'.
+
+Configuration for this run:
+  Input mode: reference-based
+  Population map: '/scratch/roseanna//info/Pop_map_HGthesis_lane1_allexcptexperimnt_lane2_LM_VanIs_lane3_NW_siteID.tsv'
+  Input files: 1370, e.g. '/scratch/roseanna//ANBO_refassembly_HGthesis_lane1_lane2_lane3/alignments_mapq20/R01-CR-CE-01.bam'
+  Output to: '/scratch/roseanna//ANBO_refassembly_HGthesis_lane1_lane2_lane3/gstacks_minmapq20_1370/'
+  Model: marukilow (var_alpha: 0.01, gt_alpha: 0.05)
+
+Reading BAM headers...
+Processing all loci...
+1K...
+2K...
+5K...
+10K...
+20K...
+50K...
+100K...
+200K...
+500K...
+1000K...
+2000K...
+done.
+
+Read 5420917211 BAM records:
+  kept 5084833995 primary alignments (94.2%), of which 2534370052 reverse reads
+  skipped 0 primary alignments with insufficient mapping qualities (0.0%)
+  skipped 314640325 excessively soft-clipped primary alignments (5.8%)
+  skipped 0 unmapped reads (0.0%)
+  skipped some suboptimal (secondary/supplementary) alignment records
+
+  Per-sample stats (details in 'gstacks.log.distribs'):
+    read 3956873.9 records/sample (8606-27811938)
+    kept 6.0%-95.9% of these
+
+Built 2870202 loci comprising 2550463943 forward reads and 2239667699 matching paired-end reads; mean insert length was 187.1 (sd: 55.0).
+
+Genotyped 2870202 loci:
+  effective per-sample coverage: mean=4.2x, stdev=2.7x, min=1.0x, max=23.0x
+  mean number of sites per locus: 161.4
+  a consistent phasing was found for 40428481 of out 43394367 (93.2%) diploid loci needing phasing
+
+gstacks is done.
