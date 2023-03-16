@@ -1,0 +1,17 @@
+7d3cfb74ae0371ae0b2f1803ece031e6  NS.1760.001.B712---D504.Hamelin_202110_plate3_R1.fastq.gz
+315729e879b462e746bafc7481b11277  NS.1760.001.B712---D504.Hamelin_202110_plate3_R2.fastq.gz
+e63525152ab50d6b31357e1db69a158f  NS.1760.001.B711---D503.Hamelin_202110_plate2_R1.fastq.gz
+c9e017c6acea360f985a76af46bc25aa  NS.1760.001.B711---D503.Hamelin_202110_plate2_R2.fastq.gz
+43f9ea61a1766bff9c8461396d790b03  NS.1760.001.B710---B504.Hamelin_202111_pool2_R1.fastq.gz
+e34b4e236ccbc1288ad233bd0db5507f  NS.1760.001.B710---B504.Hamelin_202111_pool2_R2.fastq.gz
+3097eeecdb5f3e705edfd4b7521cca1a  NS.1760.001.B712---B501.Hamelin_202110_plate4_R1.fastq.gz
+5f226f3ff2e7e335efac57ae0a8c4b33  NS.1760.001.B712---B501.Hamelin_202110_plate4_R2.fastq.gz
+d6e43a049094ee06b1c6458c65319e21  NS.1760.001.B711---D502.Hamelin_202110_plate1_R1.fastq.gz
+12785a6849d7ebd89efee2a353534c2f  NS.1760.001.B711---D502.Hamelin_202110_plate1_R2.fastq.gz
+e6e1bc08eb97c2126ea45708e4e11ae9  NS.1760.001.B709---B503.Hamelin_202111_pool1_R1.fastq.gz
+d220bb5bc0a14732a3f2887c6b6f66ff  NS.1760.001.B709---B503.Hamelin_202111_pool1_R2.fastq.gz
+f4d2cb959044b34ccedabdf2e342683d  NS.1760.001.B710---B502.Hamelin_202110_plate5_R1.fastq.gz
+7c5532d07b3f0c2b47c0424dd5d66607  NS.1760.001.B710---B502.Hamelin_202110_plate5_R2.fastq.gz
+
+
+certutil -hashfile NS.1760.001.B711---D503.Hamelin_202110_plate2_R2.fastq.gz MD5
