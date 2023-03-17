@@ -1,3 +1,5 @@
+### R file for analysis of MS Haida Gwaii dataset, author Roseanna Gamlen-Greene, March 2023, roseanna.gamlen.greene@gmail.com ###
+
 rm(list=ls())
 
 library(vcfR)
