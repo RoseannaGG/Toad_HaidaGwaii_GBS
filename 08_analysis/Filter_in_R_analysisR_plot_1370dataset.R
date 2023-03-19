@@ -1,4 +1,7 @@
+
 ### R file for analysis of MS Haida Gwaii dataset, author Roseanna Gamlen-Greene, March 2023, roseanna.gamlen.greene@gmail.com ###
+## metadata on https://github.com/RoseannaGG/Toad_HaidaGwaii_GBS ##
+
 
 rm(list=ls())
 
@@ -1038,9 +1041,9 @@ dim(Hobsdf_afterfilter) # 3356
 
 ### turn wide to long
 long_Hobsdf_afterfilter <- tidyr::gather(Hobsdf_afterfilter,
-                             key = Region,
-                             value = Obs_Het,
-                             VanIsland ,  LowerMain ,  HaidaGwai,Northwest)
+                                         key = Region,
+                                         value = Obs_Het,
+                                         VanIsland ,  LowerMain ,  HaidaGwai,Northwest)
 
 head(long_Hobsdf_afterfilter)
 dim(long_Hobsdf_afterfilter)
@@ -1097,7 +1100,7 @@ source("F:/GBS_data_03_02_21/Function_only_remove_siblings_genlight_Alba_nov_8th
 
 # run function
 gl.toad.obshetPerregion.nosibs<- remove_sibs_genlight(genlight_object = gl.toad.obshetPerregion,
-                                      names = listsibs)
+                                                      names = listsibs)
 gl.toad.obshetPerregion.nosibs
 
 
@@ -2872,7 +2875,7 @@ scatter(pnw.dapc3, cex = 2, legend = TRUE, clabel = F,
 
 
 #p <- p + scale_color_manual(values=c("#E69F00", "#56B4E9","#009E73","pink"),
-     #                       name="Region", breaks = c("VanIsland","LowerMain", "HaidaGwai","Northwest"), labels=c#("Vancouver Island", "Lower mainland", "Haida Gwaii", "Northwest BC"))
+#                       name="Region", breaks = c("VanIsland","LowerMain", "HaidaGwai","Northwest"), labels=c#("Vancouver Island", "Lower mainland", "Haida Gwaii", "Northwest BC"))
 
 
 labs <- c("HaidaGwai", "LowerMain","NorthWest","VanIsland")
@@ -4367,7 +4370,7 @@ hist(m.freq$`minorAllele(x)`,breaks=seq(0,1,l=50), main="MAF whole dataset from 
 
 #######################################
 ####################################
-       ###### Rm sibs 0.35 threshold ########
+###### Rm sibs 0.35 threshold ########
 ########################################
 
 ### Rm sibs
