@@ -241,7 +241,13 @@ R
 
 NB Bad apple 2021 Jose Cerca paper suggests running populations separately (with dif pop maps for region in my case) and then indentify individuals missing a lot of data first, then re-running populations for all regions at once but WITHOUT those bad apples in the pop map
 
-## NE Estimator
+## NE Estimator   
+
+
+
+
+
+
 
 
 
