@@ -851,7 +851,6 @@ rsync -zv /drives/f/GBS_data_03_02_21/Lane_1_2_3_feb2023/gstacks_minmapq20_1370/
 
 
 # remove
-vcftools --vcf 766INDIV_1430SNPS_editlocinamesinR.vcf --remove listindiv_plink_sub_sib_rel_over_04_names_unique.indv --out 510INDIV_1430SNPS_editlocinamesinR_rmsibsvcftools
 
 vcftools --vcf 766INDIV_1430SNPS_editlocinamesinR.vcf --remove listindiv_plink_sub_sib_rel_over_04_names_unique.indv --recode --recode-INFO-all --out 510INDIV_1430SNPS_editlocinamesinR_rmsibsvcftools
 

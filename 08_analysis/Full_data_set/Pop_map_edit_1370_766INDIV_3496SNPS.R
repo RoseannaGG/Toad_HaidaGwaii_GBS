@@ -30,6 +30,15 @@ library(adegenet)
 #setting populations
 pop.data <- read.table("F:/GBS_data_03_02_21/Lane_1_2_3_feb2023/1370_Pop_map_HGthesis_lane1_allexcptexperimnt_lane2_LM_VanIs_lane3_NW_HEADER_sorted.txt", sep = "\t", header = TRUE)
 
+pop.data.1370 <- read.table("F:/GBS_data_03_02_21/Lane_1_2_3_feb2023/1370_Pop_map_HGthesis_lane1_allexcptexperimnt_lane2_LM_VanIs_lane3_NW_HEADER_sorted.txt", sep = "\t", header = TRUE)
+dim(pop.data.1370)
+
+pop.data.1370_2<-pop.data.1370
+
+pop.data.1370_2$pop<-as.factor(pop.data.1370_2$pop)
+levels(pop.data.1370_2$pop) # 47 pops 
+
+
 ########
 # edit pop map file - remove individuals that were siblings and removed!  -copied from R output for sibs removed and also vcf output of list of individuals with over 30% missing data
 ##############
@@ -109,6 +118,16 @@ dim(pop.data_rm) #766   7
 pop.data_rm$onecluster<-rep("one")
 
 
+## add two clusters - haida gwaii in one, rest in another
+
+
+pop.data_rm$twoclusters<-pop.data_rm$threeclusters
+
+pop.data_rm$twoclusters[pop.data_rm$twoclusters=="swBC"] <- "CoastalBC"
+pop.data_rm$twoclusters[pop.data_rm$twoclusters=="Northwest"] <- "CoastalBC"
+
+pop.data_rm
+
 #pop.data_rm <- pop.data[ ! pop.data$sample.id %in% rmsibs$V1, ]
 #pop.data_rm
 
@@ -122,6 +141,8 @@ dim(pop.data) #  766   7
 #open shortened file
 pop.data <- read.table("F:/GBS_data_03_02_21/Lane_1_2_3_feb2023/gstacks_minmapq20_1370/populations_ANBOref_r60_R60pctoverall_mm001_mh06_wss/766INDIV_3496SNPS/popmap.766_samples_header_region_rmINdiv_sorted.txt", sep = "\t", header = TRUE)
 
+pop.data.766<-pop.data
+
 # count pops and get list
 str(pop.data$pop)
 
@@ -132,5 +153,12 @@ pop.data2$pop<-as.factor(pop.data2$pop)
 levels(pop.data2$pop)
 
 ponds_kept_766INDIV_3496SNPS<-levels(pop.data2$pop)
+
+
+# lost these 3 populations
+# "R01-SI-LL"
+# "R02-SC-HA"
+# "R02-SS-KH"
+
 
 write.table(ponds_kept_766INDIV_3496SNPS,"F:/GBS_data_03_02_21/Lane_1_2_3_feb2023/gstacks_minmapq20_1370/populations_ANBOref_r60_R60pctoverall_mm001_mh06_wss/766INDIV_3496SNPS/ponds_kept_766INDIV_3496SNPS.txt",quote=FALSE,sep = "\t",row.names=FALSE,col.names = F)
