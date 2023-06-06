@@ -1,0 +1,13 @@
+1 YlGn_9_seq_6
+2 YlGn_9_seq_9
+3 YlGn_9_seq_4
+4 dark_purple
+5 color60
+6 color101
+7 red
+8 blue
+9 color129
+10 color109
+11 dark_brown
+12 yellow
+13 black
