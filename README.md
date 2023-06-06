@@ -156,15 +156,19 @@ populations -P $src/ANBO_refassembly_HGthesis_lane1_lane2_lane3/gstacks_minmapq2
   - download vcfall file for this
 
 ## 10. Filtering - O'Leary paper
-  ### Filter biallelic, mac=3, min depth =5, mean min depth =5, GQ =20, rm indels
+  ### Filter biallelic, min depth =5, GQ =20, rm indels, maf=0.01
   
   VCF tools
   
-  ### Fitler missing SNPs and missing individuals iteratively until got dataset with SNPS missing in less than 10% of indiv, and indivs missing less than 25% of SNPs.
+  ### Fitler missing SNPs and missing individuals iteratively until got dataset with SNPS missing in less than 20% of indiv, and indivs missing less than 30% of SNPs.
 
   VCF tools
   
+    ### Fitler maf 0.03
+    
+     VCF tools
   
+
   ## 10b. Export vcf file and missing individual files to desktop
   
 
@@ -173,11 +177,6 @@ populations -P $src/ANBO_refassembly_HGthesis_lane1_lane2_lane3/gstacks_minmapq2
     - per region 0.6
    - R
   
-    ### Fitler out siblings 0.2 full sibs and half sibs (if just full sibs 0.4 or 0.35)
-  
-  - plink and R
-  - using 0.4 threshold
-
   ### Fitler SNPs out of HWE 0.01
   
   - Per region, averaged across each locus
@@ -235,17 +234,20 @@ R
 
 R
 
-  ## ANALYSIS ON SEPERATE DATASETS - E.G. Haida Gwaii and Vancouver Island
+  ## ANALYSIS ON SEPERATE DATASETS - Haida Gwaii 
   
-  ### Separate datasets in R - i.e. fully filtered dataset at the end of step 10.
+ ### redo from alignment onwards (align all Haida Gwaii samples together)
   
-  - seppop() function adegenet 
-
-## run steps 11-16 for separate datasets (also the nucleotide diversity output from populations)
 
 NB Bad apple 2021 Jose Cerca paper suggests running populations separately (with dif pop maps for region in my case) and then indentify individuals missing a lot of data first, then re-running populations for all regions at once but WITHOUT those bad apples in the pop map
 
-## NE Estimator
+## NE Estimator   
+
+
+
+
+
+
 
 
 
