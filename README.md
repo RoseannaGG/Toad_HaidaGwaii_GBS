@@ -3,7 +3,7 @@
 ## Data info
 We have GBS double-digested (Mspl and PstI), paired-end (2x101bp), Illumina Novaseq data with an individual level barcode on the forward read only. The data provided from the sequencing platform came back to us as demultiplexed plates with the Illumina adapter sequences and plate barcodes trimmed off (just leaving the individual barcode and cutsite on the forward read, and just the cutsite on the reverse read). There were three Novaseq lanes. This analysis started with 1370 samples, and 47 breeding sites - from the lower mainland, Vancouver Island, Haida Gwaii and northwest BC. DNA extractions done at UBC Hamelin lab, library prep done at Laval, sequencing done at Genome QC. Bioinformatics were done by RGG on the Compute Canada cluster. Most analyses were done in R. Research funded by National Geographic, BC Ministry of Forests and the UBC Public Scholar Intiative. RGGs stipend provided by Govt. Canada Vanier Scholarship and BC Ministry of Forests. 
 
-#### Lane - number of samples   
+#### Lane - number of samples (this analysis did not use all samples from lanes 2 and 3)  
 Lane one - 835   
 Lane two - 584   
 Lane three - 516   
