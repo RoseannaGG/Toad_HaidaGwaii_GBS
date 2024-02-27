@@ -41,7 +41,7 @@ ii) on server
 
 md5sum NS.2053.003.B716---D502.Hamelin__20230109-Plate-2_R2.fastq.gz
 
-NB md5sum of the ANBO ref genome gz:
+# md5sum of the ANBO ref genome gz:
 md5 final_assembly.fasta.gz
 
 MD5 (final_assembly.fasta.gz) = 6fdcbe193386586a823e5e172e615f98
